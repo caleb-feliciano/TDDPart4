@@ -37,5 +37,7 @@ def test_addTotalTax(invoice, products):
 def test_canCalculateTax (invoice, products):
     invoice.calculateTotalTax(products)
     assert invoice.calculateTotalTax(products) == 74.07
-
-
+    
+def test_CanCalcucalatePercentDiscount(invoice, products):
+    invoice.percentDiscount(products)
+    assert invoice.percentDiscount(products) == 8.100317094263477
