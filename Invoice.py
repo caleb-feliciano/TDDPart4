@@ -61,4 +61,7 @@ class Invoice:
         return total_sale
 
 
+    def percentDiscount(self, products):
+        percent_discount = self.totalDiscount(products) * 100 / self.totalPurePrice(products)
+        return percent_discount
 
